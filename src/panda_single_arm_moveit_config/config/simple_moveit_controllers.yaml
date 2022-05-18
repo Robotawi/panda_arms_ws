@@ -1,0 +1,13 @@
+controller_list:
+  - name: rgt_arm_position_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - rgt_panda_joint1
+      - rgt_panda_joint2
+      - rgt_panda_joint3
+      - rgt_panda_joint4
+      - rgt_panda_joint5
+      - rgt_panda_joint6
+      - rgt_panda_joint7

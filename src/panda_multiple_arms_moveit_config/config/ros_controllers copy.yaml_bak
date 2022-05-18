@@ -1,0 +1,6 @@
+multiple_panda_arms:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    []
+  gains:
+    {}

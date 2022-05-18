@@ -1,0 +1,26 @@
+controller_manager_ns: controller_manager
+controller_list:
+  - name: panda_multiple_arms/rgt_panda_trajectory_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - rgt_panda_joint1
+      - rgt_panda_joint2
+      - rgt_panda_joint3
+      - rgt_panda_joint4
+      - rgt_panda_joint5
+      - rgt_panda_joint6
+
+  - name: panda_multiple_arms/lft_panda_trajectory_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - lft_panda_joint1
+      - lft_panda_joint2
+      - lft_panda_joint3
+      - lft_panda_joint4
+      - lft_panda_joint5
+      - lft_panda_joint6
+    

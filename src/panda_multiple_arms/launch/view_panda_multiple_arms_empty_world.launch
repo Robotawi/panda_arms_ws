@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Launch empty Gazebo world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="use_sim_time" value="true" />
+        <arg name="gui" value="true" />
+        <arg name="debug" value="false" />
+        <arg name="paused" value="true" />
+    </include>
+
+    <!-- Find my robot Description-->
+    <param name="robot_description" command="$(find xacro)/xacro  '$(find panda_multiple_arms)/robot_description/panda_multiple_arms.xacro'" />
+
+    <!-- convert joint states to TF transforms for rviz, etc -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+        <remap from="/joint_states" to="/panda_multiple_arms/joint_states" />
+    </node>
+
+    <!-- Spawn The Robot using the robot_description param-->
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model panda_multiple_arms" />
+
+    <!-- spawn the controllers -->
+    <include file="$(find panda_multiple_arms)/launch/panda_multiple_arms_trajectory_controller.launch" />
+
+</launch>

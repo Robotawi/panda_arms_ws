@@ -1,6 +1,6 @@
 panda_multiple_arms:
   rgt_arm_trajectory_controller:
-    type: "effort_controllers/JointTrajectoryController"
+    type: "position_controllers/JointTrajectoryController"
     joints:
       - rgt_arm_joint1
       - rgt_arm_joint2
@@ -22,7 +22,7 @@ panda_multiple_arms:
     action_monitor_rate: 10
 
   lft_arm_trajectory_controller:
-    type: "effort_controllers/JointTrajectoryController"
+    type: "position_controllers/JointTrajectoryController"
     joints:
       - lft_arm_joint1
       - lft_arm_joint2

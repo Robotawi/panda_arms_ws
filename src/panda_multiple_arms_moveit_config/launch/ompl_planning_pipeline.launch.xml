@@ -21,6 +21,6 @@
   <!-- Add MoveGroup capabilities specific to this pipeline -->
   <!-- <param name="capabilities" value="" /> -->
 
-  <rosparam command="load" file="$(find multiple_arms_moveit_config)/config/ompl_planning.yaml"/>
+  <rosparam command="load" file="$(find panda_multiple_arms_moveit_config)/config/ompl_planning.yaml"/>
 
 </launch>

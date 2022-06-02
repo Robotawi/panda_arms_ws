@@ -128,7 +128,6 @@ planner_configs:
     dense_delta_fraction: 0.001  # delta fraction for interface detection. default: 0.001
     max_failures: 5000  # maximum consecutive failure limit. default: 5000
 rgt_arm:
-  default_planner_config: RRTConnect
   planner_configs:
     - AnytimePathShortening
     - SBL
@@ -154,10 +153,7 @@ rgt_arm:
     - LazyPRMstar
     - SPARS
     - SPARStwo
-  projection_evaluator: joints(rgt_panda_joint1,rgt_panda_joint2)
-  longest_valid_segment_fraction: 0.005
 lft_arm:
-  default_planner_config: RRTConnect
   planner_configs:
     - AnytimePathShortening
     - SBL
@@ -183,8 +179,6 @@ lft_arm:
     - LazyPRMstar
     - SPARS
     - SPARStwo
-  projection_evaluator: joints(lft_panda_joint1,lft_panda_joint2)
-  longest_valid_segment_fraction: 0.005
 rgt_hand:
   planner_configs:
     - AnytimePathShortening

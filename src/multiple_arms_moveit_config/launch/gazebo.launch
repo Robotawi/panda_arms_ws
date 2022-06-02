@@ -3,7 +3,7 @@
   <arg name="paused" default="false"/>
   <arg name="gazebo_gui" default="true"/>
   <arg name="initial_joint_positions" doc="Initial joint configuration of the robot"
-       default=" -J lft_panda_finger_joint1 0.035 -J lft_panda_joint1 0 -J lft_panda_joint2 -0.785 -J lft_panda_joint3 0 -J lft_panda_joint4 -2.356 -J lft_panda_joint5 0 -J lft_panda_joint6 1.571 -J lft_panda_joint7 0.785 -J rgt_panda_finger_joint1 0.035 -J rgt_panda_joint1 0 -J rgt_panda_joint2 -0.785 -J rgt_panda_joint3 0 -J rgt_panda_joint4 -2.356 -J rgt_panda_joint5 0 -J rgt_panda_joint6 1.571 -J rgt_panda_joint7 0.785"/>
+       default=" -J lft_arm_finger_joint1 0.035 -J lft_arm_joint1 0 -J lft_arm_joint2 -0.785 -J lft_arm_joint3 0 -J lft_arm_joint4 -2.356 -J lft_arm_joint5 0 -J lft_arm_joint6 1.571 -J lft_arm_joint7 0.785 -J rgt_arm_finger_joint1 0.035 -J rgt_arm_joint1 0 -J rgt_arm_joint2 -0.785 -J rgt_arm_joint3 0 -J rgt_arm_joint4 -2.356 -J rgt_arm_joint5 0 -J rgt_arm_joint6 1.571 -J rgt_arm_joint7 0.785"/>
 
   <!-- startup simulated world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -13,7 +13,7 @@
   </include>
 
   <!-- send robot urdf to param server -->
-  <param name="robot_description" textfile="$(find panda_multiple_arms_moveit_config)/config/gazebo_panda_multiple_arms.urdf" />
+  <param name="robot_description" command="xacro  '$(find panda_multiple_arms)/robot_description/panda_multiple_arms.xacro'" />
 
   <!-- unpause only after loading robot model -->
   <arg name="unpause" value="$(eval '' if arg('paused') else '-unpause')" />
@@ -23,7 +23,7 @@
     respawn="false" output="screen" />
 
   <!-- Load joint controller parameters for Gazebo -->
-  <rosparam file="$(find panda_multiple_arms_moveit_config)/config/gazebo_controllers.yaml" />
+  <rosparam file="$(find multiple_arms_moveit_config)/config/gazebo_controllers.yaml" />
   <!-- Spawn Gazebo ROS controllers -->
   <node name="gazebo_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="joint_state_controller" />
   <!-- Load ROS controllers -->

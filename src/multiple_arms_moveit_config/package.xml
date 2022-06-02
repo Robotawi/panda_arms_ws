@@ -1,6 +1,6 @@
 <package>
 
-  <name>panda_multiple_arms_moveit_config</name>
+  <name>multiple_arms_moveit_config</name>
   <version>0.3.0</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the panda_multiple_arms with the MoveIt Motion Planning Framework

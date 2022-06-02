@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.3)
-project(panda_multiple_arms_moveit_config)
+project(multiple_arms_moveit_config)
 
 find_package(catkin REQUIRED)
 

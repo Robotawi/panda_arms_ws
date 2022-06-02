@@ -2,31 +2,31 @@ controller_list:
   - name: fake_rgt_arm_controller
     type: $(arg fake_execution_type)
     joints:
-      - rgt_panda_joint1
-      - rgt_panda_joint2
-      - rgt_panda_joint3
-      - rgt_panda_joint4
-      - rgt_panda_joint5
-      - rgt_panda_joint6
-      - rgt_panda_joint7
+      - rgt_arm_joint1
+      - rgt_arm_joint2
+      - rgt_arm_joint3
+      - rgt_arm_joint4
+      - rgt_arm_joint5
+      - rgt_arm_joint6
+      - rgt_arm_joint7
   - name: fake_lft_arm_controller
     type: $(arg fake_execution_type)
     joints:
-      - lft_panda_joint1
-      - lft_panda_joint2
-      - lft_panda_joint3
-      - lft_panda_joint4
-      - lft_panda_joint5
-      - lft_panda_joint6
-      - lft_panda_joint7
+      - lft_arm_joint1
+      - lft_arm_joint2
+      - lft_arm_joint3
+      - lft_arm_joint4
+      - lft_arm_joint5
+      - lft_arm_joint6
+      - lft_arm_joint7
   - name: fake_rgt_hand_controller
     type: $(arg fake_execution_type)
     joints:
-      - rgt_panda_finger_joint1
+      - rgt_arm_finger_joint1
   - name: fake_lft_hand_controller
     type: $(arg fake_execution_type)
     joints:
-      - lft_panda_finger_joint1
+      - lft_arm_finger_joint1
 initial:  # Define initial robot poses per group
   - group: rgt_arm
     pose: ready

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <robot name="panda_multiple_arms" xmlns:xacro="http://ros.org/wiki/xacro">
 
-    <xacro:arg name="arm_id_1" default="rgt_panda" />
-    <xacro:arg name="arm_id_2" default="lft_panda" />
+    <xacro:arg name="arm_id_1" default="rgt_arm" />
+    <xacro:arg name="arm_id_2" default="lft_arm" />
 
     <xacro:include filename="$(find franka_description)/robots/utils.xacro"/>
     <xacro:include filename="$(find franka_description)/robots/panda_arm.xacro"/>

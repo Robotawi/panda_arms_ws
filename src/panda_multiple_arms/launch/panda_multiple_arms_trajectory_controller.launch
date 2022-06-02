@@ -2,6 +2,6 @@
 <launch>
     <rosparam file="$(find panda_multiple_arms)/config/trajectory_controller.yaml" command="load" />
 
-    <node name="arms_trajectory_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/panda_multiple_arms" args="rgt_panda_trajectory_controller lft_panda_trajectory_controller" />
+    <node name="arms_trajectory_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/panda_multiple_arms" args="rgt_arm_trajectory_controller lft_arm_trajectory_controller" />
 
 </launch>

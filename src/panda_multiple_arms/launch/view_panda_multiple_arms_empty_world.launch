@@ -4,22 +4,32 @@
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="use_sim_time" value="true" />
         <arg name="gui" value="true" />
+        <arg name="paused" value="false" />
         <arg name="debug" value="false" />
-        <arg name="paused" value="true" />
     </include>
 
     <!-- Find my robot Description-->
     <param name="robot_description" command="$(find xacro)/xacro  '$(find panda_multiple_arms)/robot_description/panda_multiple_arms.xacro'" />
 
-    <!-- convert joint states to TF transforms for rviz, etc -->
-    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
-        <remap from="/joint_states" to="/panda_multiple_arms/joint_states" />
-    </node>
-
-    <!-- Spawn The Robot using the robot_description param-->
+    <!-- Spawn The robot over the robot_description param-->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model panda_multiple_arms" />
 
-    <!-- spawn the controllers -->
-    <include file="$(find panda_multiple_arms)/launch/panda_multiple_arms_trajectory_controller.launch" />
+    <!--  Spawn The Robot at specific pause use the below spawner args, and set the above paused arg to true-->
+    <!-- <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model panda_multiple_arms
+    -J rgt_arm_joint1 0.0
+    -J rgt_arm_joint2 -0.785
+    -J rgt_arm_joint3 0.0
+    -J rgt_arm_joint4 -2.356
+    -J rgt_arm_joint5 0.0
+    -J rgt_arm_joint6 1.571
+    -J rgt_arm_joint7 0.785
+    -J lft_arm_joint1 0.0
+    -J lft_arm_joint2 -0.785
+    -J lft_arm_joint3 0.0
+    -J lft_arm_joint4 -2.356
+    -J lft_arm_joint5 0.0
+    -J lft_arm_joint6 1.571
+    -J lft_arm_joint7 0.785
+    -unpause"/> -->
 
 </launch>

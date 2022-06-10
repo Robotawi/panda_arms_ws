@@ -2,3 +2,7 @@
 build/*
 devel/*
 logs/*
+.vscode/settings.json
+src/panda_multiple_arms/robot_description/test_urdf.urdf
+src/panda_multiple_arms/robot_description/test3_urdf.urdf
+src/panda_multiple_arms/robot_description/test_test_urdf.urdf

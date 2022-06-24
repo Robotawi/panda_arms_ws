@@ -78,7 +78,6 @@
     <!-- load ros_control plugin -->
     <gazebo>
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-            <!-- <robotNamespace>/panda_multiple_arms</robotNamespace> -->
             <!-- <controlPeriod>0.001</controlPeriod> -->
             <!-- <robotSimType>franka_gazebo/FrankaHWSim</robotSimType> -->
         </plugin>

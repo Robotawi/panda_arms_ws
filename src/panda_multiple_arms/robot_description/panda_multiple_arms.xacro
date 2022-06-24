@@ -77,8 +77,7 @@
 
     <!-- load ros_control plugin -->
     <gazebo>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-        </plugin>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
     </gazebo>
 
 </robot>

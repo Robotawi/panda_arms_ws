@@ -1,14 +1,8 @@
 <?xml version="1.0"?>
 <launch>
+    
     <!-- Load joint controller configurations from YAML file to parameter server -->
     <rosparam file="$(find panda_multiple_arms)/config/joint_state_controller.yaml" command="load" />
     <!-- <node name="joint_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/panda_multiple_arms" args="joint_state_controller" /> -->
     <node name="joint_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="joint_state_controller" />
-
-
-    <!-- Broadcast TF transforms for from joint states -->
-    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
-        <!-- <remap from="/joint_states" to="/panda_multiple_arms/joint_states" /> -->
-    </node>
-
 </launch>

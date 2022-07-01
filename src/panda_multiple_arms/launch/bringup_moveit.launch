@@ -15,7 +15,7 @@
     <!-- Start the simulated robot in an empty Gazebo world -->
     <include file="$(find panda_multiple_arms)/launch/view_panda_multiple_arms_empty_world.launch" />
 
-    <!-- Start the controllers -->
+    <!-- Start the controllers and robot state publisher-->
     <include file="$(find panda_multiple_arms)/launch/controller_utils.launch"/>
 
     <!-- Start moveit_rviz with the motion planning plugin -->

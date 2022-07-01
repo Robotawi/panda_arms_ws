@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-
-    <!-- Load joint state controller configurations and spawn it-->
-    <rosparam file="$(find panda_multiple_arms)/config/joint_state_controller.yaml" command="load" />
-
-    <node name="joint_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="joint_state_controller" />
-    
-</launch>

@@ -58,7 +58,7 @@ int main(int argc, char **argv)
     }
 
     // Plan arbitrary poses for the arms
-    // Move the right arm 0.10 meters up  from its current pose
+    // Move the right arm 0.10 meters up with respect to its current pose
     geometry_msgs::PoseStamped current_rgt_arm_pose = rgt_arm_move_group_interface.getCurrentPose();
     geometry_msgs::PoseStamped target_rgt_arm_pose = current_rgt_arm_pose;
 
@@ -72,7 +72,7 @@ int main(int argc, char **argv)
         rgt_arm_move_group_interface.execute(rgt_arm_plan);
     }
 
-    // Move the left arm 0.10 meters front from its current pose
+    // Move the left arm 0.10 meters front with respect to its current pose
     geometry_msgs::PoseStamped current_lft_arm_pose = lft_arm_move_group_interface.getCurrentPose();
     geometry_msgs::PoseStamped target_lft_arm_pose = current_lft_arm_pose;
 

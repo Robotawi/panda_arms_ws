@@ -1,3 +1,8 @@
+/* 
+   Author: Mohamed Raessa (mohamed@avatarin, mohamed.s.raessa@gmail.com
+   Desc: Planning simple motions for multiple arms and hands using MoveIt move group interface
+*/
+
 #include <ros/ros.h>
 #include <moveit/move_group_interface/move_group_interface.h>
 

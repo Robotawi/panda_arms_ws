@@ -8,13 +8,13 @@
         <arg name="debug" value="false" />
     </include>
 
-    <!-- Find my robot Description-->
+    <!-- Load the robot description file-->
     <param name="robot_description" command="$(find xacro)/xacro  '$(find panda_multiple_arms)/robot_description/panda_multiple_arms.xacro'" />
 
-    <!-- Spawn The robot over the robot_description param-->
+    <!-- Spawn the robot over the robot_description param-->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model panda_multiple_arms" />
 
-    <!--  Spawn The Robot at specific pause use the below spawner args, and set the above paused arg to true-->
+    <!--  Optional: Spawn the robot at specific pause use the below spawner args, and set the above paused arg to true. This initial pose should correspond to the initial pose in the robot srdf-->
     <!-- <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model panda_multiple_arms
     -J rgt_arm_joint1 0.0
     -J rgt_arm_joint2 -0.785

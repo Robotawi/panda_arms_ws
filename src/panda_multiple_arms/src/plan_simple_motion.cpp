@@ -15,13 +15,14 @@ int main(int argc, char **argv)
     ros::AsyncSpinner spinner(1);
     spinner.start();
 
+    // Set the arms and hands planning groups names
     static const std::string rgt_arm_group = "rgt_arm";
     static const std::string rgt_hand_group = "rgt_hand";
 
     static const std::string lft_arm_group = "lft_arm";
     static const std::string lft_hand_group = "lft_hand";
 
-    // Set the planning groups names
+    // Declar MoveGroupInterface for each arm and hand
     moveit::planning_interface::MoveGroupInterface rgt_arm_move_group_interface(rgt_arm_group);
     moveit::planning_interface::MoveGroupInterface rgt_hand_move_group_interface(rgt_hand_group);
 

@@ -16,75 +16,75 @@ int main(int argc, char **argv)
     spinner.start();
 
     // Set the arms and hands planning groups names
-    static const std::string rgt_arm_group = "rgt_arm";
-    static const std::string rgt_hand_group = "rgt_hand";
+    static const std::string right_arm_group = "right_arm";
+    static const std::string right_hand_group = "right_hand";
 
-    static const std::string lft_arm_group = "lft_arm";
-    static const std::string lft_hand_group = "lft_hand";
+    static const std::string left_arm_group = "left_arm";
+    static const std::string left_hand_group = "left_hand";
 
     // Declar MoveGroupInterface for each arm and hand
-    moveit::planning_interface::MoveGroupInterface rgt_arm_move_group_interface(rgt_arm_group);
-    moveit::planning_interface::MoveGroupInterface rgt_hand_move_group_interface(rgt_hand_group);
+    moveit::planning_interface::MoveGroupInterface right_arm_move_group_interface(right_arm_group);
+    moveit::planning_interface::MoveGroupInterface right_hand_move_group_interface(right_hand_group);
 
-    moveit::planning_interface::MoveGroupInterface lft_arm_move_group_interface(lft_arm_group);
-    moveit::planning_interface::MoveGroupInterface lft_hand_move_group_interface(lft_hand_group);
+    moveit::planning_interface::MoveGroupInterface left_arm_move_group_interface(left_arm_group);
+    moveit::planning_interface::MoveGroupInterface left_hand_move_group_interface(left_hand_group);
 
     // Set the goals to be the pre-defined/named "ready" pose
-    rgt_arm_move_group_interface.setNamedTarget("ready");
-    lft_arm_move_group_interface.setNamedTarget("ready");
+    right_arm_move_group_interface.setNamedTarget("ready");
+    left_arm_move_group_interface.setNamedTarget("ready");
 
     // Declar Plan objects for each arm
-    moveit::planning_interface::MoveGroupInterface::Plan rgt_arm_plan;
-    moveit::planning_interface::MoveGroupInterface::Plan lft_arm_plan;
+    moveit::planning_interface::MoveGroupInterface::Plan right_arm_plan;
+    moveit::planning_interface::MoveGroupInterface::Plan left_arm_plan;
 
     // Do the planning with the specific target poses
-    bool rgt_success = (rgt_arm_move_group_interface.plan(rgt_arm_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
-    bool lft_success = (lft_arm_move_group_interface.plan(lft_arm_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
+    bool rgt_success = (right_arm_move_group_interface.plan(right_arm_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
+    bool lft_success = (left_arm_move_group_interface.plan(left_arm_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
 
     // If the planning is successful, execute the arms motions (move the robot) and open the gripper
     if (rgt_success)
     {
-        rgt_arm_move_group_interface.execute(rgt_arm_plan);
+        right_arm_move_group_interface.execute(right_arm_plan);
 
-        rgt_hand_move_group_interface.setNamedTarget("open");
-        rgt_hand_move_group_interface.move();
+        right_hand_move_group_interface.setNamedTarget("open");
+        right_hand_move_group_interface.move();
     }
 
     if (lft_success)
     {
-        lft_arm_move_group_interface.execute(lft_arm_plan);
+        left_arm_move_group_interface.execute(left_arm_plan);
 
-        lft_hand_move_group_interface.setNamedTarget("open");
-        lft_hand_move_group_interface.move();
+        left_hand_move_group_interface.setNamedTarget("open");
+        left_hand_move_group_interface.move();
     }
 
     // Plan arbitrary poses for the arms
     // Move the right arm 0.10 meters up with respect to its current pose
-    geometry_msgs::PoseStamped current_rgt_arm_pose = rgt_arm_move_group_interface.getCurrentPose();
-    geometry_msgs::PoseStamped target_rgt_arm_pose = current_rgt_arm_pose;
+    geometry_msgs::PoseStamped current_right_arm_pose = right_arm_move_group_interface.getCurrentPose();
+    geometry_msgs::PoseStamped target_right_arm_pose = current_right_arm_pose;
 
-    target_rgt_arm_pose.pose.position.z += 0.10;
+    target_right_arm_pose.pose.position.z += 0.10;
 
-    rgt_arm_move_group_interface.setPoseTarget(target_rgt_arm_pose);
-    rgt_success = (rgt_arm_move_group_interface.plan(rgt_arm_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
+    right_arm_move_group_interface.setPoseTarget(target_right_arm_pose);
+    rgt_success = (right_arm_move_group_interface.plan(right_arm_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
 
     if (rgt_success)
     {
-        rgt_arm_move_group_interface.execute(rgt_arm_plan);
+        right_arm_move_group_interface.execute(right_arm_plan);
     }
 
     // Move the left arm 0.10 meters front with respect to its current pose
-    geometry_msgs::PoseStamped current_lft_arm_pose = lft_arm_move_group_interface.getCurrentPose();
-    geometry_msgs::PoseStamped target_lft_arm_pose = current_lft_arm_pose;
+    geometry_msgs::PoseStamped current_left_arm_pose = left_arm_move_group_interface.getCurrentPose();
+    geometry_msgs::PoseStamped target_left_arm_pose = current_left_arm_pose;
 
-    target_lft_arm_pose.pose.position.x += 0.10;
-    lft_arm_move_group_interface.setPoseTarget(target_lft_arm_pose);
+    target_left_arm_pose.pose.position.x += 0.10;
+    left_arm_move_group_interface.setPoseTarget(target_left_arm_pose);
 
-    lft_success = (lft_arm_move_group_interface.plan(lft_arm_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
+    lft_success = (left_arm_move_group_interface.plan(left_arm_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
 
     if (lft_success)
     {
-        lft_arm_move_group_interface.execute(lft_arm_plan);
+        left_arm_move_group_interface.execute(left_arm_plan);
     }
 
     ros::shutdown();

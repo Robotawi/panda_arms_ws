@@ -76,200 +76,200 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_hand:
+          left_arm_hand:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_hand_sc:
+          left_arm_hand_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_hand_tcp:
+          left_arm_hand_tcp:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_leftfinger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          lft_arm_link0:
+          left_arm_leftfinger:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_link0_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lft_arm_link1:
+          left_arm_link0:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_link1_sc:
+          left_arm_link0_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_link2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          lft_arm_link2_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lft_arm_link3:
+          left_arm_link1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_link3_sc:
+          left_arm_link1_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_link4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          lft_arm_link4_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lft_arm_link5:
+          left_arm_link2:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_link5_sc:
+          left_arm_link2_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_link6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          lft_arm_link6_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lft_arm_link7:
+          left_arm_link3:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_link7_sc:
+          left_arm_link3_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_link8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lft_arm_rightfinger:
+          left_arm_link4:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_hand:
+          left_arm_link4_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_arm_link5:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_hand_sc:
+          left_arm_link5_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_hand_tcp:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rgt_arm_leftfinger:
+          left_arm_link6:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link0:
+          left_arm_link6_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_arm_link7:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link0_sc:
+          left_arm_link7_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_link1:
+          left_arm_link8:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-            Value: true
-          rgt_arm_link1_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rgt_arm_link2:
+          left_arm_rightfinger:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link2_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rgt_arm_link3:
+          right_arm_hand:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link3_sc:
+          right_arm_hand_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_link4:
+          right_arm_hand_tcp:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-            Value: true
-          rgt_arm_link4_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rgt_arm_link5:
+          right_arm_leftfinger:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link5_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rgt_arm_link6:
+          right_arm_link0:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link6_sc:
+          right_arm_link0_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_link7:
+          right_arm_link1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link7_sc:
+          right_arm_link1_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_link8:
+          right_arm_link2:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_rightfinger:
+            Value: true
+          right_arm_link2_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_arm_link3_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_arm_link4_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_arm_link5_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_arm_link6_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_arm_link7_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link8:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_rightfinger:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -301,7 +301,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: lft_arm
+        Planning Group: left_arm
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -329,200 +329,200 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_hand:
+          left_arm_hand:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_hand_sc:
+          left_arm_hand_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_hand_tcp:
+          left_arm_hand_tcp:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_leftfinger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          lft_arm_link0:
+          left_arm_leftfinger:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_link0_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lft_arm_link1:
+          left_arm_link0:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_link1_sc:
+          left_arm_link0_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_link2:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          lft_arm_link2_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lft_arm_link3:
+          left_arm_link1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_link3_sc:
+          left_arm_link1_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_link4:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          lft_arm_link4_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lft_arm_link5:
+          left_arm_link2:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_link5_sc:
+          left_arm_link2_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_link6:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          lft_arm_link6_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lft_arm_link7:
+          left_arm_link3:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          lft_arm_link7_sc:
+          left_arm_link3_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          lft_arm_link8:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          lft_arm_rightfinger:
+          left_arm_link4:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_hand:
+          left_arm_link4_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_arm_link5:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_hand_sc:
+          left_arm_link5_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_hand_tcp:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rgt_arm_leftfinger:
+          left_arm_link6:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link0:
+          left_arm_link6_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_arm_link7:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link0_sc:
+          left_arm_link7_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_link1:
+          left_arm_link8:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-            Value: true
-          rgt_arm_link1_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rgt_arm_link2:
+          left_arm_rightfinger:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link2_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rgt_arm_link3:
+          right_arm_hand:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link3_sc:
+          right_arm_hand_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_link4:
+          right_arm_hand_tcp:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-            Value: true
-          rgt_arm_link4_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rgt_arm_link5:
+          right_arm_leftfinger:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link5_sc:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          rgt_arm_link6:
+          right_arm_link0:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link6_sc:
+          right_arm_link0_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_link7:
+          right_arm_link1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          rgt_arm_link7_sc:
+          right_arm_link1_sc:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_link8:
+          right_arm_link2:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          rgt_arm_rightfinger:
+            Value: true
+          right_arm_link2_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_arm_link3_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_arm_link4_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_arm_link5_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_arm_link6_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_arm_link7_sc:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_link8:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_arm_rightfinger:
             Alpha: 1
             Show Axes: false
             Show Trail: false

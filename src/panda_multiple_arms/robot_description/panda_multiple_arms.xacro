@@ -2,8 +2,8 @@
 <robot name="panda_multiple_arms" xmlns:xacro="http://ros.org/wiki/xacro">
 
     <!-- add arms names prefixes -->
-    <xacro:arg name="arm_id_1" default="rgt_arm" />
-    <xacro:arg name="arm_id_2" default="lft_arm" />
+    <xacro:arg name="arm_id_1" default="right_arm" />
+    <xacro:arg name="arm_id_2" default="left_arm" />
 
     <!-- load arm/hand models and utils (which adds the robot inertia tags to be Gazebo-simulation ready) -->
     <xacro:include filename="$(find franka_description)/robots/common/utils.xacro" />

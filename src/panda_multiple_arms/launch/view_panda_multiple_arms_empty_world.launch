@@ -16,20 +16,20 @@
 
     <!--  Optional: Spawn the robot at specific pause use the below spawner args, and set the above paused arg to true. This initial pose should correspond to the initial pose in the robot srdf-->
     <!-- <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model panda_multiple_arms
-    -J rgt_arm_joint1 0.0
-    -J rgt_arm_joint2 -0.785
-    -J rgt_arm_joint3 0.0
-    -J rgt_arm_joint4 -2.356
-    -J rgt_arm_joint5 0.0
-    -J rgt_arm_joint6 1.571
-    -J rgt_arm_joint7 0.785
-    -J lft_arm_joint1 0.0
-    -J lft_arm_joint2 -0.785
-    -J lft_arm_joint3 0.0
-    -J lft_arm_joint4 -2.356
-    -J lft_arm_joint5 0.0
-    -J lft_arm_joint6 1.571
-    -J lft_arm_joint7 0.785
+    -J right_arm_joint1 0.0
+    -J right_arm_joint2 -0.785
+    -J right_arm_joint3 0.0
+    -J right_arm_joint4 -2.356
+    -J right_arm_joint5 0.0
+    -J right_arm_joint6 1.571
+    -J right_arm_joint7 0.785
+    -J left_arm_joint1 0.0
+    -J left_arm_joint2 -0.785
+    -J left_arm_joint3 0.0
+    -J left_arm_joint4 -2.356
+    -J left_arm_joint5 0.0
+    -J left_arm_joint6 1.571
+    -J left_arm_joint7 0.785
     -unpause"/> -->
 
 </launch>

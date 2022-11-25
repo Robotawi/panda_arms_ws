@@ -1,5 +1,5 @@
-stomp/rgt_arm:
-  group_name: rgt_arm
+stomp/right_arm:
+  group_name: right_arm
   optimization:
     num_timesteps: 60
     num_iterations: 40
@@ -37,8 +37,8 @@ stomp/rgt_arm:
         publish_intermediate: True
         marker_topic: stomp_trajectory
         marker_namespace: optimized
-stomp/lft_arm:
-  group_name: lft_arm
+stomp/left_arm:
+  group_name: left_arm
   optimization:
     num_timesteps: 60
     num_iterations: 40
@@ -76,8 +76,8 @@ stomp/lft_arm:
         publish_intermediate: True
         marker_topic: stomp_trajectory
         marker_namespace: optimized
-stomp/rgt_hand:
-  group_name: rgt_hand
+stomp/right_hand:
+  group_name: right_hand
   optimization:
     num_timesteps: 60
     num_iterations: 40
@@ -115,8 +115,8 @@ stomp/rgt_hand:
         publish_intermediate: True
         marker_topic: stomp_trajectory
         marker_namespace: optimized
-stomp/lft_hand:
-  group_name: lft_hand
+stomp/left_hand:
+  group_name: left_hand
   optimization:
     num_timesteps: 60
     num_iterations: 40
